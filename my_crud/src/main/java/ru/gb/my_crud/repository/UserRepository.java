@@ -1,6 +1,7 @@
 package ru.gb.my_crud.repository;
 
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
@@ -10,6 +11,7 @@ import java.util.List;
 
 @Repository
 public class UserRepository {
+    @Autowired
     private final JdbcTemplate jdbc;
 
     public UserRepository(JdbcTemplate jdbc) {
