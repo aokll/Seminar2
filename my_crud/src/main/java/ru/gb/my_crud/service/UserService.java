@@ -1,5 +1,6 @@
 package ru.gb.my_crud.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import ru.gb.my_crud.model.User;
 import ru.gb.my_crud.repository.UserRepository;
@@ -8,6 +9,7 @@ import java.util.List;
 
 @Service
 public class UserService {
+    @Autowired
     private final UserRepository userRepository;
 
     public UserService(UserRepository userRepository) {
